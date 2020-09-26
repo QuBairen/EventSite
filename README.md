@@ -51,21 +51,20 @@ the following fields identified:
 up for an event).
 (Complete)
 * The tool should allow the user to
-* List all events
+   * List all events
 (Complete: http://127.0.0.1:8000/api/v1/events/)
-* Sign up for an event
+   * Sign up for an event
 (Complete: http://127.0.0.1:8000/api/v1/registrations/)
-* Remove email address from event
+   * Remove email address from event
 (Complete: http://127.0.0.1:8000/api/v1/registrations/1/)
-* When signing up for an event the tool should email a pre-defined email address with a
+   * When signing up for an event the tool should email a pre-defined email address with a
 notification.
 (Complete: Requires Local SMTP server to be running, settings.REGISTRATION_EMAIL)
-* All properties (i.e. the pre-defined email address) should be easy to change before
+   * All properties (i.e. the pre-defined email address) should be easy to change before
 deployment.
 (Complete: ./eventsite/settings.py )
-* All event times will be in the same timezone.
-* An event can span multiple days.
-(Complete: Everything is valid)
+   * All event times will be in the same timezone.
+   * An event can span multiple days. (Complete: Everything is valid)
 ## Deliverables
 ### Critical
 * The code should be build and deploy locally (no dependencies on AWS, Heroku, or other
