@@ -2,7 +2,6 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from .serializers import EventSerializer, VisitorSerializer, RegistrationSerializer
 from .models import Event, Visitor, Registration
-from .permissions import Check_API_KEY_Auth
 
 class EventViewSet(viewsets.ModelViewSet):
     queryset = Event.objects.all().order_by('-name')
